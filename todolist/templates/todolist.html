@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+</head>
+{% for todo in context['todo_list'] %}
+    {{ loop.index }}. {{ todo.title }}<br/>
+{% endfor %}
+<a href="/todolist/create/">Create TODO</a>
+</body>
+</html>
